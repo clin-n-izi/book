@@ -74,6 +74,7 @@ namespace BookWeb.Controllers
                 TempData["success"] = "Category update successfully";
                 return RedirectToAction("Index");
             }
+
             return View(obj);
         }
         public IActionResult Delete(int? id)
